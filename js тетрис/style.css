@@ -48,7 +48,7 @@ body {
 
 #game-over {
     font-size: 100px;
-    color: green;
+    color: red;
     text-align: center;
     display: none;
     position: absolute;
