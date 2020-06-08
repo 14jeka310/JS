@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script>
+        window.onload = function () {
+            let sample = new Vue({
+                el: '#app',
+                data: {
+                    description: 'Et harum quidem rerum facilis est et expedita distinctio, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, qui dolorem eum fugiat, quo voluptas nulla pariatur',
+                    final: 'Quis autem vel eum iure reprehenderit, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.'
+
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<style>
+    header{
+        text-align: center;
+        font-size: 30px;
+    }
+    #desc{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #final{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-align: center;
+        color: red;
+    }
+</style>
+<header>Vue js</header>
+<div id="app">
+    <div id="desc">{{ description }}</div>
+    <div id="final">{{ final }}</div>
+</div>
+
+</body>
+
+</html>
